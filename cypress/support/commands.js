@@ -17,7 +17,7 @@
     cy.contains('Submit').click();
  });
 
-  Cypress.Commands.add('addNewBook', (title, description, authors) => {
+  Cypress.Commands.add('addNewBookToFavorite', (title, description, authors) => {
     cy.contains('Add new').click();
     cy.get('#title').type(title);
     cy.get('#description')
@@ -26,6 +26,13 @@
     cy.get('#favorite').click();
     cy.contains('Submit').click();
  });
+
+   Cypress.Commands.add('deleteFromFavorite', (title) => {
+    cy.visit('/favorites');
+    cy.get('.card-body').should('contain', title);
+    cy.contains('Delete from favorite').click();
+ });
+
 
 
 //

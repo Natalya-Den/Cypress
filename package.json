@@ -6,11 +6,6 @@
     "mobile": "cypress open --config-file cypressMobile.config.js",
     "note": "cypress open --config-file cypress.config.js",
 
-    "chrome:headless": "cypress run --browser chrome --headless --config-file cypresMobile.config.js",
-    "chrome:headed": "cypress run --browser chrome --headed --config-file cypress.config.js",
-    "electron:headless": "cypress run --browser electron --headless --config-file cypress.config.js",
-    "electron:headed": "cypress run --browser electron --headed --config-file cypress.config.js",
-
     "chrome:mobile:headless": "cypress run --browser chrome --headless --config-file cypressMobile.config.js",
     "chrome:mobile:headed": "cypress run --browser chrome --headed --config-file cypressMobile.config.js",
     "electron:mobile:headless": "cypress run --browser electron --headless --config-file cypressMobile.config.js",
